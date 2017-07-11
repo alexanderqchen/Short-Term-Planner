@@ -6,20 +6,58 @@
 		<meta name="Description" content="A planner or calendar to get things done in a short amount of time. Perfect for when there is an approaching deadline or just want to get something done very quickly.">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+			h1{
+				margin: 0;
+				padding: 0;
+				font-family: Verdana, Geneva, sans-serif;
+			}
+			.row{
+				margin: 0;
+				padding: 0;
+			}
+			.col-md-6{
+				margin: 0;
+				padding: 0;
+			}
+
+			/* Header */
+			header{
+				padding: 20px;
+			}
+			header.timeline{
+				background: green;
+				vertical-align: middle;
+			}
+			header.tasks{
+				background: red;
+			}
+		</style>
 	</head>
+
 	<body>
 		<div class="row">
 			<div class="col-md-6" id="timeline">
+				<header class="timeline">
+					<h1>Timeline</h1>
+				</header>
+				
 			</div>
 			<div class="col-md-6" id="tasks">
+				<header class="tasks">
+					<h1>Tasks</h1>
+				</header>
+				
 			</div>
-			
 		</div>
 	</body>
 </html>
