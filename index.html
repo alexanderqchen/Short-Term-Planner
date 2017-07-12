@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<title>Get (Sh)it Done</title>
-		<meta name="Author" content="Alexander Chen">
-		<meta name="Description" content="A planner or calendar to get things done in a short amount of time. Perfect for when there is an approaching deadline or just want to get something done very quickly.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Alexander Chen">
+		<meta name="description" content="A planner or calendar to get things done in a short amount of time. Perfect for when there is an approaching deadline or just want to get something done very quickly.">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!-- jQuery library -->
@@ -25,7 +26,7 @@
 				margin: 0;
 				padding: 0;
 			}
-			.col-md-6{
+			.col-lg-6.col-md-6.col-sm-6.col-xs-6{
 				margin: 0;
 				padding: 0;
 			}
@@ -34,29 +35,37 @@
 			header{
 				padding: 20px;
 			}
-			header.timeline{
-				background: green;
-				vertical-align: middle;
+			header.timeline-header{
+				background: #4894FD;
 			}
-			header.tasks{
-				background: red;
+			header.tasks-header{
+				background: #FF643F;
+			}
+
+			#timeline{
+				height: 100vh;
+				background: #D7E8FF;
+			}
+			#tasks{
+				height: 100vh;
+				background: #FFE8E2
 			}
 		</style>
 	</head>
 
 	<body>
 		<div class="row">
-			<div class="col-md-6" id="timeline">
-				<header class="timeline">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="timeline">
+				<header class="timeline-header">
 					<h1>Timeline</h1>
 				</header>
-				
+				<table>
+				</table>
 			</div>
-			<div class="col-md-6" id="tasks">
-				<header class="tasks">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="tasks">
+				<header class="tasks-header">
 					<h1>Tasks</h1>
 				</header>
-				
 			</div>
 		</div>
 	</body>
