@@ -50,22 +50,51 @@
 				height: 100vh;
 				background: #FFE8E2
 			}
+			.scroll{
+				overflow: scroll;
+			}
+			/*.content{
+				padding: 50px;
+			}*/
+			#newtask{
+				width: 50%;
+			}
 		</style>
 	</head>
 
 	<body>
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="timeline">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 content" id="timeline">
 				<header class="timeline-header">
 					<h1>Timeline</h1>
 				</header>
-				<table>
-				</table>
+				<br>
+				<div class="scroll">
+				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="tasks">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 content" id="tasks">
 				<header class="tasks-header">
 					<h1>Tasks</h1>
 				</header>
+				<br>
+				<center>
+					<form id="newtask">
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Enter new task...">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
+							</div>
+						</div>
+					</form>
+				</center>
+
+				<div class="scroll">
+					<ul>
+						<li>temp</li>
+						<li>temp</li>
+						<li>temp</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</body>
